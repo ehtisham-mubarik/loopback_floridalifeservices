@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "electorn-api"
+  },
+  "AccessToken": {
+    "dataSource": "electorn-api",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "electorn-api",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "electorn-api",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "electorn-api",
+    "public": false
+  },
+  "Category": {
+    "dataSource": "electorn-api",
+    "public": true
+  },
+  "SubCategory": {
+    "dataSource": "electorn-api",
+    "public": true
+  },
+  "MetaField": {
+    "dataSource": "electorn-api",
+    "public": true
+  },
+  "Person": {
+    "dataSource": "electorn-api",
+    "public": true
+  },
+  "Case": {
+    "dataSource": "electorn-api",
+    "public": true
+  },
+  "Contact": {
+    "dataSource": "electorn-api",
+    "public": true
+  },
+  "CaseFile": {
+    "dataSource": "electorn-api",
+    "public": true
+  }
+}

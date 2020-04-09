@@ -1,0 +1,44 @@
+{
+  "name": "Person",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Timestamp": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "ssn": {
+      "type": "string"
+    },
+    "smoker": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "case": {
+      "type": "hasMany",
+      "model": "Case",
+      "foreignKey": ""
+    },
+    "combinedCase": {
+      "type": "hasMany",
+      "model": "CombinedCase",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

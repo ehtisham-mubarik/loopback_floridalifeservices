@@ -1,0 +1,54 @@
+{
+  "name": "Case",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Timestamp": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "catId": {
+      "type": "string",
+      "required": true
+    },
+    "subCatId": {
+      "type": "string",
+      "required": true
+    },
+    "subCatName": {
+      "type": "string",
+      "required": true
+    },
+    "catName": {
+      "type": "string",
+      "required": true
+    },
+    "metaFields": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": ""
+    },
+    "caseFile": {
+      "type": "belongsTo",
+      "model": "CaseFile",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

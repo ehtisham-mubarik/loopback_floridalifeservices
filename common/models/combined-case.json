@@ -1,0 +1,42 @@
+{
+  "name": "CombinedCase",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Timestamp": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "data_collections": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": ""
+    },
+    "case": {
+      "type": "belongsTo",
+      "model": "Case",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "electorn-api": {
+    "port": 27017,
+    "url": "mongodb://heroku_1h4bwd2m:cbm3esstjiujgr8islbuuacodj@ds029797.mlab.com:29797/heroku_1h4bwd2m",
+    "database": "heroku_1h4bwd2m",
+    "password": "",
+    "name": "electorn-api",
+    "user": "",
+    "authSource": "heroku_1h4bwd2m",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
